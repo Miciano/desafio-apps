@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98A163E11EC55D8E00BE3667 /* MainRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A163E01EC55D8E00BE3667 /* MainRequests.swift */; };
+		98A163E61EC55FB600BE3667 /* MainResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A163E51EC55FB600BE3667 /* MainResponses.swift */; };
+		98A163E81EC560AB00BE3667 /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A163E71EC560AB00BE3667 /* ServerError.swift */; };
+		98A163EA1EC5678F00BE3667 /* MainParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A163E91EC5678F00BE3667 /* MainParse.swift */; };
+		98BDEBBF1EC555360099EDBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDEBBE1EC555360099EDBC /* AppDelegate.swift */; };
+		98BDEBC11EC555360099EDBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDEBC01EC555360099EDBC /* ViewController.swift */; };
+		98BDEBC41EC555360099EDBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BDEBC21EC555360099EDBC /* Main.storyboard */; };
+		98BDEBC61EC555360099EDBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98BDEBC51EC555360099EDBC /* Assets.xcassets */; };
+		98BDEBC91EC555360099EDBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BDEBC71EC555360099EDBC /* LaunchScreen.storyboard */; };
+		98BDEBD21EC556520099EDBC /* APIURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDEBD11EC556520099EDBC /* APIURLs.swift */; };
+		98BDEBD51EC557F90099EDBC /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDEBD41EC557F90099EDBC /* DictionaryExtension.swift */; };
+		98BDEBD71EC5586C0099EDBC /* NoticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDEBD61EC5586C0099EDBC /* NoticeModel.swift */; };
+		98BDEBD91EC559DB0099EDBC /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDEBD81EC559DB0099EDBC /* SectionModel.swift */; };
+		98BDEBDB1EC55A2A0099EDBC /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDEBDA1EC55A2A0099EDBC /* ImageModel.swift */; };
+		CBB002BC797C8422D34BF1C1 /* Pods_Info_Globo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E810FB1248F0AEF8CC766C /* Pods_Info_Globo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		48982AE583A3643CCAEC7043 /* Pods-Info Globo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Globo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Info Globo/Pods-Info Globo.release.xcconfig"; sourceTree = "<group>"; };
+		52E810FB1248F0AEF8CC766C /* Pods_Info_Globo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Info_Globo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98A163E01EC55D8E00BE3667 /* MainRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRequests.swift; sourceTree = "<group>"; };
+		98A163E51EC55FB600BE3667 /* MainResponses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainResponses.swift; sourceTree = "<group>"; };
+		98A163E71EC560AB00BE3667 /* ServerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		98A163E91EC5678F00BE3667 /* MainParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainParse.swift; sourceTree = "<group>"; };
+		98BDEBBB1EC555360099EDBC /* Info Globo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Info Globo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98BDEBBE1EC555360099EDBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98BDEBC01EC555360099EDBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98BDEBC31EC555360099EDBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98BDEBC51EC555360099EDBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98BDEBC81EC555360099EDBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98BDEBCA1EC555360099EDBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98BDEBD11EC556520099EDBC /* APIURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIURLs.swift; sourceTree = "<group>"; };
+		98BDEBD41EC557F90099EDBC /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		98BDEBD61EC5586C0099EDBC /* NoticeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeModel.swift; sourceTree = "<group>"; };
+		98BDEBD81EC559DB0099EDBC /* SectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		98BDEBDA1EC55A2A0099EDBC /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		C8748ED23CB528B9FD1F232D /* Pods-Info Globo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Globo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Info Globo/Pods-Info Globo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98BDEBB81EC555360099EDBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB002BC797C8422D34BF1C1 /* Pods_Info_Globo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AD4F8C92BAD11467EB8A8A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52E810FB1248F0AEF8CC766C /* Pods_Info_Globo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98A163E41EC55FA200BE3667 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				98A163E71EC560AB00BE3667 /* ServerError.swift */,
+				98BDEBD61EC5586C0099EDBC /* NoticeModel.swift */,
+				98BDEBD81EC559DB0099EDBC /* SectionModel.swift */,
+				98BDEBDA1EC55A2A0099EDBC /* ImageModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		98BDEBB21EC555360099EDBC = {
+			isa = PBXGroup;
+			children = (
+				98BDEBBD1EC555360099EDBC /* Info Globo */,
+				98BDEBBC1EC555360099EDBC /* Products */,
+				DE748E194FB3CC4B663D9495 /* Pods */,
+				6AD4F8C92BAD11467EB8A8A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		98BDEBBC1EC555360099EDBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98BDEBBB1EC555360099EDBC /* Info Globo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98BDEBBD1EC555360099EDBC /* Info Globo */ = {
+			isa = PBXGroup;
+			children = (
+				98BDEBD31EC557910099EDBC /* Extensions */,
+				98BDEBD01EC556420099EDBC /* Request */,
+				98BDEBBE1EC555360099EDBC /* AppDelegate.swift */,
+				98BDEBC01EC555360099EDBC /* ViewController.swift */,
+				98BDEBC21EC555360099EDBC /* Main.storyboard */,
+				98BDEBC51EC555360099EDBC /* Assets.xcassets */,
+				98BDEBC71EC555360099EDBC /* LaunchScreen.storyboard */,
+				98BDEBCA1EC555360099EDBC /* Info.plist */,
+			);
+			path = "Info Globo";
+			sourceTree = "<group>";
+		};
+		98BDEBD01EC556420099EDBC /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				98A163E41EC55FA200BE3667 /* Models */,
+				98BDEBD11EC556520099EDBC /* APIURLs.swift */,
+				98A163E01EC55D8E00BE3667 /* MainRequests.swift */,
+				98A163E51EC55FB600BE3667 /* MainResponses.swift */,
+				98A163E91EC5678F00BE3667 /* MainParse.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		98BDEBD31EC557910099EDBC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				98BDEBD41EC557F90099EDBC /* DictionaryExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		DE748E194FB3CC4B663D9495 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8748ED23CB528B9FD1F232D /* Pods-Info Globo.debug.xcconfig */,
+				48982AE583A3643CCAEC7043 /* Pods-Info Globo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98BDEBBA1EC555360099EDBC /* Info Globo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98BDEBCD1EC555360099EDBC /* Build configuration list for PBXNativeTarget "Info Globo" */;
+			buildPhases = (
+				84B00CDBA1E378F9FFC7926E /* [CP] Check Pods Manifest.lock */,
+				98BDEBB71EC555360099EDBC /* Sources */,
+				98BDEBB81EC555360099EDBC /* Frameworks */,
+				98BDEBB91EC555360099EDBC /* Resources */,
+				E1CE6C082D70A30CCD11CF9D /* [CP] Embed Pods Frameworks */,
+				01920D61D03B2F473F00B971 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Info Globo";
+			productName = "Info Globo";
+			productReference = 98BDEBBB1EC555360099EDBC /* Info Globo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98BDEBB31EC555360099EDBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Fabio Miciano";
+				TargetAttributes = {
+					98BDEBBA1EC555360099EDBC = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = MCDF44DBT7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 98BDEBB61EC555360099EDBC /* Build configuration list for PBXProject "Info Globo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98BDEBB21EC555360099EDBC;
+			productRefGroup = 98BDEBBC1EC555360099EDBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98BDEBBA1EC555360099EDBC /* Info Globo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98BDEBB91EC555360099EDBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98BDEBC91EC555360099EDBC /* LaunchScreen.storyboard in Resources */,
+				98BDEBC61EC555360099EDBC /* Assets.xcassets in Resources */,
+				98BDEBC41EC555360099EDBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01920D61D03B2F473F00B971 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Info Globo/Pods-Info Globo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84B00CDBA1E378F9FFC7926E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1CE6C082D70A30CCD11CF9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Info Globo/Pods-Info Globo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98BDEBB71EC555360099EDBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98BDEBD71EC5586C0099EDBC /* NoticeModel.swift in Sources */,
+				98BDEBC11EC555360099EDBC /* ViewController.swift in Sources */,
+				98BDEBD21EC556520099EDBC /* APIURLs.swift in Sources */,
+				98BDEBBF1EC555360099EDBC /* AppDelegate.swift in Sources */,
+				98A163EA1EC5678F00BE3667 /* MainParse.swift in Sources */,
+				98BDEBD51EC557F90099EDBC /* DictionaryExtension.swift in Sources */,
+				98A163E81EC560AB00BE3667 /* ServerError.swift in Sources */,
+				98BDEBD91EC559DB0099EDBC /* SectionModel.swift in Sources */,
+				98A163E11EC55D8E00BE3667 /* MainRequests.swift in Sources */,
+				98BDEBDB1EC55A2A0099EDBC /* ImageModel.swift in Sources */,
+				98A163E61EC55FB600BE3667 /* MainResponses.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		98BDEBC21EC555360099EDBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98BDEBC31EC555360099EDBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98BDEBC71EC555360099EDBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98BDEBC81EC555360099EDBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98BDEBCB1EC555360099EDBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98BDEBCC1EC555360099EDBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98BDEBCE1EC555360099EDBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8748ED23CB528B9FD1F232D /* Pods-Info Globo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MCDF44DBT7;
+				INFOPLIST_FILE = "Info Globo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Miciano.Info-Globo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		98BDEBCF1EC555360099EDBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48982AE583A3643CCAEC7043 /* Pods-Info Globo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MCDF44DBT7;
+				INFOPLIST_FILE = "Info Globo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Miciano.Info-Globo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98BDEBB61EC555360099EDBC /* Build configuration list for PBXProject "Info Globo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98BDEBCB1EC555360099EDBC /* Debug */,
+				98BDEBCC1EC555360099EDBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98BDEBCD1EC555360099EDBC /* Build configuration list for PBXNativeTarget "Info Globo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98BDEBCE1EC555360099EDBC /* Debug */,
+				98BDEBCF1EC555360099EDBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98BDEBB31EC555360099EDBC /* Project object */;
+}
