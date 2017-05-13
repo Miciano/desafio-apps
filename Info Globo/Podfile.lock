@@ -5,8 +5,8 @@ PODS:
   - KVNProgress (2.3.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.0)
-  - AlamofireImage (~> 3.0)
+  - Alamofire (~> 4.3)
+  - AlamofireImage (~> 3.1)
   - KVNProgress
 
 SPEC CHECKSUMS:
@@ -14,6 +14,6 @@ SPEC CHECKSUMS:
   AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
   KVNProgress: 8167b1f19e2758290c0b6143020ed9dcbb0477a1
 
-PODFILE CHECKSUM: 1a9218589bdd5737d4db719f47abb8e22ba6b2a1
+PODFILE CHECKSUM: c50964a2f3bfdd203e825cdfb3b54d4fa5e014c0
 
 COCOAPODS: 1.1.1

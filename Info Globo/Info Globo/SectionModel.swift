@@ -11,4 +11,15 @@ import Foundation
 
 struct SectionModel {
     
+    var name: String
+    var url: String
+    
+    init(info: [String: Any]) throws {
+        
+        guard let name = info.nameKey,
+            let url = info.urlKey else { throw ParseErros.invalidInput }
+        
+        self.name = name
+        self.url = url
+    }
 }

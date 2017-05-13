@@ -30,10 +30,8 @@ struct MainRequests: MainParse {
                 let resultValue = value as? [String: Any]
                 switch response.response?.statusCode ?? 0 {
                 case 400...405:
-                    if let detail = resultValue?.detailKey {
-                        let error = ServerError(msgError: detail, statusCode: response.response!.statusCode)
-                        completion(.serverError(description: error))
-                    }
+                    let error = ServerError(msgError: "Erro 400", statusCode: response.response!.statusCode)
+                    completion(.serverError(description: error))
                 case 500:
                     let error = ServerError(msgError: "Bad Access", statusCode: 500)
                     completion(.serverError(description: error))
@@ -54,6 +52,8 @@ struct MainRequests: MainParse {
                 case -1001:
                     let erro = ServerError(msgError: "Tempo de requisição execido, tente novamente", statusCode: -1001)
                     completion(.timeOut(description: erro))
+                case -999:
+                    completion(.cancelled)
                 default:
                     completion(.invalidResponse)
                 }

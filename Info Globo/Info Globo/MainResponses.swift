@@ -13,5 +13,6 @@ enum NoticeResponse {
     case serverError(description: ServerError)
     case timeOut(description: ServerError)
     case noConnection(description: ServerError)
+    case cancelled
     case invalidResponse
 }
