@@ -9,7 +9,7 @@
 import Foundation
 
 enum NoticeResponse {
-    case success(model: NoticeModel?)
+    case success(model: [ContentModel]?)
     case serverError(description: ServerError)
     case timeOut(description: ServerError)
     case noConnection(description: ServerError)

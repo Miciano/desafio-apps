@@ -11,8 +11,8 @@ import UIKit
 
 extension Dictionary where Key: ExpressibleByStringLiteral, Value: Any {
     
-    var contentKey: [String: Any]? {
-        return self["conteudos"] as? [String: Any]
+    var contentKey: [[String: Any]]? {
+        return self["conteudos"] as? [[String: Any]]
     }
     
     var autorsKey: [String]? {

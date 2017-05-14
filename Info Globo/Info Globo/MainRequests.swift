@@ -25,9 +25,11 @@ struct MainRequests: MainParse {
         
         alamofireManager?.request(APIURLs.main, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { (response) in
             
+            print("======= \(response.response?.statusCode)")
+            
             switch response.result {
             case .success(let value):
-                let resultValue = value as? [String: Any]
+                let resultValue = value as? [[String: Any]]
                 switch response.response?.statusCode ?? 0 {
                 case 400...405:
                     let error = ServerError(msgError: "Erro 400", statusCode: response.response!.statusCode)
@@ -39,7 +41,7 @@ struct MainRequests: MainParse {
                     let error = ServerError(msgError: "Seu aplicativo está desatualizado, atualiza para poder usa-lo", statusCode: 301)
                     completion(.serverError(description: error))
                 case 200:
-                    let model = self.parserNotice(response: resultValue)
+                    let model = self.parserContent(response: resultValue)
                     completion(.success(model: model))
                 default:
                     completion(.invalidResponse)

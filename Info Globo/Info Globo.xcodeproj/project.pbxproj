@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		989E03F11EC7CB1F00635CD8 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989E03F01EC7CB1F00635CD8 /* ContentModel.swift */; };
 		98A163E11EC55D8E00BE3667 /* MainRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A163E01EC55D8E00BE3667 /* MainRequests.swift */; };
 		98A163E61EC55FB600BE3667 /* MainResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A163E51EC55FB600BE3667 /* MainResponses.swift */; };
 		98A163E81EC560AB00BE3667 /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A163E71EC560AB00BE3667 /* ServerError.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		48982AE583A3643CCAEC7043 /* Pods-Info Globo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Globo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Info Globo/Pods-Info Globo.release.xcconfig"; sourceTree = "<group>"; };
 		52E810FB1248F0AEF8CC766C /* Pods_Info_Globo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Info_Globo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		989E03F01EC7CB1F00635CD8 /* ContentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		98A163E01EC55D8E00BE3667 /* MainRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRequests.swift; sourceTree = "<group>"; };
 		98A163E51EC55FB600BE3667 /* MainResponses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainResponses.swift; sourceTree = "<group>"; };
 		98A163E71EC560AB00BE3667 /* ServerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				98BDEBD61EC5586C0099EDBC /* NoticeModel.swift */,
 				98BDEBD81EC559DB0099EDBC /* SectionModel.swift */,
 				98BDEBDA1EC55A2A0099EDBC /* ImageModel.swift */,
+				989E03F01EC7CB1F00635CD8 /* ContentModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				98BDEBD21EC556520099EDBC /* APIURLs.swift in Sources */,
 				98BDEBBF1EC555360099EDBC /* AppDelegate.swift in Sources */,
 				98A163EA1EC5678F00BE3667 /* MainParse.swift in Sources */,
+				989E03F11EC7CB1F00635CD8 /* ContentModel.swift in Sources */,
 				98BDEBD51EC557F90099EDBC /* DictionaryExtension.swift in Sources */,
 				98A163E81EC560AB00BE3667 /* ServerError.swift in Sources */,
 				98BDEBD91EC559DB0099EDBC /* SectionModel.swift in Sources */,

@@ -16,13 +16,22 @@ enum ParseErros: Error {
 }
 
 protocol MainParse {
-    func parserNotice(response: [String: Any]?)-> NoticeModel?
+    func parserContent(response: [[String: Any]]?)-> [ContentModel]?
 }
 
 extension MainParse {
     
-    func parserNotice(response: [String: Any]?)-> NoticeModel? {
+    func parserContent(response: [[String: Any]]?)-> [ContentModel]? {
         guard let response = response else { return nil }
-        return try? NoticeModel(info: response)
+        
+        let info: [[[String: Any]]] = response.flatMap {
+            return $0.contentKey
+        }
+        
+        let model: [ContentModel] = info.flatMap {
+            return try? ContentModel(info: $0)
+        }
+        
+        return model
     }
 }
