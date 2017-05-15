@@ -12,7 +12,7 @@ import AlamofireImage
 
 struct MainRequests: MainParse {
     
-    var alamofireManager: Alamofire.SessionManager?
+    let alamofireManager: Alamofire.SessionManager
     
     init() {
         let configuration = URLSessionConfiguration.default
@@ -23,9 +23,7 @@ struct MainRequests: MainParse {
     
     func getNotices(completion:@escaping (_ response: NoticeResponse)->Void) {
         
-        alamofireManager?.request(APIURLs.main, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { (response) in
-            
-            print("======= \(response.response?.statusCode)")
+        alamofireManager.request(APIURLs.main, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { (response) in
             
             switch response.result {
             case .success(let value):

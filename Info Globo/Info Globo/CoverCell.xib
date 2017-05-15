@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoverCell" rowHeight="89" id="H7R-6t-O0S" customClass="CoverCell" customModule="Info_Globo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H7R-6t-O0S" id="7O4-Ze-mN4">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9A8-rV-utc">
+                        <rect key="frame" x="8" y="8" width="100" height="73"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Bsa-Yy-AXy"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUl-GZ-p7A">
+                        <rect key="frame" x="118" y="8" width="249" height="18"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxc-bd-VzK">
+                        <rect key="frame" x="118" y="36" width="249" height="44.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.098854802548885345" green="0.17108848690986633" blue="0.23695492744445801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cxc-bd-VzK" firstAttribute="top" secondItem="iUl-GZ-p7A" secondAttribute="bottom" constant="10" id="08Z-xO-U6B"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cxc-bd-VzK" secondAttribute="bottom" id="1H9-nr-64c"/>
+                    <constraint firstItem="iUl-GZ-p7A" firstAttribute="trailing" secondItem="7O4-Ze-mN4" secondAttribute="trailingMargin" id="3N2-4e-iEr"/>
+                    <constraint firstItem="iUl-GZ-p7A" firstAttribute="top" secondItem="7O4-Ze-mN4" secondAttribute="topMargin" id="5YJ-lq-7g7"/>
+                    <constraint firstItem="cxc-bd-VzK" firstAttribute="leading" secondItem="9A8-rV-utc" secondAttribute="trailing" constant="10" id="b3O-2n-loC"/>
+                    <constraint firstItem="9A8-rV-utc" firstAttribute="bottom" secondItem="7O4-Ze-mN4" secondAttribute="bottomMargin" id="bdg-WZ-N4r"/>
+                    <constraint firstItem="9A8-rV-utc" firstAttribute="leading" secondItem="7O4-Ze-mN4" secondAttribute="leadingMargin" id="cdI-2Y-gaN"/>
+                    <constraint firstItem="9A8-rV-utc" firstAttribute="top" secondItem="7O4-Ze-mN4" secondAttribute="topMargin" id="wfL-tl-lqr"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cxc-bd-VzK" secondAttribute="trailing" id="wnk-MQ-9fO"/>
+                    <constraint firstItem="iUl-GZ-p7A" firstAttribute="leading" secondItem="9A8-rV-utc" secondAttribute="trailing" constant="10" id="z8B-rR-QIQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="photoView" destination="9A8-rV-utc" id="PdM-UT-nkC"/>
+                <outlet property="sectionLabel" destination="iUl-GZ-p7A" id="azJ-jW-oSa"/>
+                <outlet property="titleLabel" destination="cxc-bd-VzK" id="nb0-dT-NZb"/>
+            </connections>
+            <point key="canvasLocation" x="-24.5" y="-33.5"/>
+        </tableViewCell>
+    </objects>
+</document>
