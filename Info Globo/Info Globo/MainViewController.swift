@@ -12,7 +12,8 @@ import UIKit
 class MainViewController: UIViewController {
     
     var tableView: UITableView?
-    var dataSource: [ContentModel]?
+    var contentDataSource: [ContentModel]?
+    var noticesDataSource: [NoticeModel]?
     
     lazy var cellFactory = {
        return CellFactory()
@@ -62,7 +63,6 @@ class MainViewController: UIViewController {
     
     fileprivate func incrementDataSource(model: [ContentModel]) {
         
-        for content in model { dataSource?.append(content) }
         
         //tableView?.dataSource = self
         tableView?.reloadData()
