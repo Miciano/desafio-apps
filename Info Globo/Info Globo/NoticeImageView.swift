@@ -30,10 +30,10 @@ class NoticeImageView: UIView, Constraints {
     func createImage(url: String) {
         
         self.isHidden = false
+        for view in self.subviews { view.removeFromSuperview() }
         
         // Se não tiver URL para para request removo todos os filhos e escondo a view
         if url == "" {
-            for view in self.subviews { view.removeFromSuperview() }
             self.isHidden = true
             return
         }

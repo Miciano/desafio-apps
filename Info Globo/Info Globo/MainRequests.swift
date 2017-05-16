@@ -71,7 +71,7 @@ struct MainRequests: MainParse {
         let imgView = UIImageView()
         
         guard let url = URL(string: url) else { return }
-        imgView.af_setImage(withURL: url, placeholderImage: nil, filter: nil, progress: nil, progressQueue: DispatchQueue.main, imageTransition: UIImageView.ImageTransition.noTransition, runImageTransitionIfCached: true) { (response) in
+        imgView.af_setImage(withURL: url, placeholderImage: nil, filter: nil, progress: nil, progressQueue: DispatchQueue.main, imageTransition: UIImageView.ImageTransition.noTransition, runImageTransitionIfCached: false) { (response) in
             
             switch response.result {
             case .success(let value):
