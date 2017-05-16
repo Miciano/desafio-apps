@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//Classe padrão para todas as celulas de noticias
 class NoticeCell: UITableViewCell {
     
     func configure(with model: CoverCellModel) {}

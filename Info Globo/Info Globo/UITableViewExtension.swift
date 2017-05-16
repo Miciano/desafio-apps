@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 extension UITableView {
+    //Função de criaçnao de celulas
     func loadNoticeCell(with identifier: String, at indexPath: IndexPath, model: CoverCellModel)-> UITableViewCell?  {
         let cell = self.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         

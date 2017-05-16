@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+//EXTENSION CRIADA PARA ARMAZENAR TODAS AS CHAVES USADAS NOS PARSES
+//FACILITANDO A EDIÇÃO E PERMITINDO A REUTILIZAÇÃO
+
 extension Dictionary where Key: ExpressibleByStringLiteral, Value: Any {
     
     var contentKey: [[String: Any]]? {

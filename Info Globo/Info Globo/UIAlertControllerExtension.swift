@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIAlertController {
-    
+    //Alerta genérico que pode ser usado em qualquer momento
     static func alert(title:String, message:String, presenter: UIViewController?, handler: ((UIAlertAction) -> Void)?) {
         guard let presenter = presenter else { return }
         

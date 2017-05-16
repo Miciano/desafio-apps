@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+//FABRICA DE CELULAS CRIADA PARA FACILITAR A CRIACAO DE CELULAS DE DIFERENTES LAYOUTS
+
+//Tipos de celulas que podem ser criados
 public enum CellItem {
     
     case mainCover(model: CoverCellModel)
@@ -17,6 +20,7 @@ public enum CellItem {
 
 struct CellFactory {
     
+    //Função retorna a celula que será criada de acordo com o tipo de celula
     func buildCell(for cellItem: CellItem, at indexPath: IndexPath, on tableView: UITableView)-> UITableViewCell? {
         
         switch cellItem {

@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+//PROTOCOLO CRIADO PAR ADICIONAR CONSTRAINTS DE FORMA MANUAL
+
 protocol Constraints {
     func addConstraints(_ item: AnyObject?, toItem: AnyObject, attributes:[NSLayoutAttribute], constants:[CGFloat])
 }

@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+//EXTENSION CRIA UMA VARIAVEL QUE CONTEM O IDENTFIER DA CELULA QUE É IGUAL AO SEU NOME
+
 extension UITableViewCell {
     
     static var cellIdentifier: String {

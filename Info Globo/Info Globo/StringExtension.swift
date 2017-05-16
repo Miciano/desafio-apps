@@ -10,6 +10,7 @@ import Foundation
 
 extension String {
     
+    //Converte uma data do formato yyyy-MM-ddTHH:mm:ss para dd/MM/yy HH:mm
     func convertDate()-> String{
         let date = self.characters.split(separator: "T").map(String.init)
         let originalDayDataFormatter = DateFormatter()

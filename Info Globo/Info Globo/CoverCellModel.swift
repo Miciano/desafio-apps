@@ -8,6 +8,7 @@
 
 import Foundation
 
+//Model de configuração das células
 public struct CoverCellModel {
     
     var photoNotice: String

@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct APIURLs {
     static let main = "https://raw.githubusercontent.com/Infoglobo/desafio-apps/master/capa.json"
     

@@ -11,10 +11,12 @@ import UIKit
 
 class CoverCell: NoticeCell {
     
+    //PRAGMA MARK: -- OUTLETS --
     @IBOutlet weak var photoView: NoticeImageView!
     @IBOutlet weak var sectionLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     
+    //Função de configuração da célula
     override func configure(with model: CoverCellModel) {
         
         sectionLabel.text = model.section

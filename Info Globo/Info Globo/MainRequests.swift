@@ -15,14 +15,17 @@ struct MainRequests: MainParse {
     let alamofireManager: Alamofire.SessionManager
     
     init() {
+        //Configura o tempo de timeout do request
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 10
         configuration.timeoutIntervalForResource = 10
         alamofireManager = Alamofire.SessionManager(configuration: configuration)
         
+        //Configura os tipos de imagens que podem ser baixadas
         Alamofire.DataRequest.addAcceptableImageContentTypes(["image/jpg", "image/png", "image/jpeg"])
     }
     
+    //Função faz request no JSON das noticias
     func getNotices(completion:@escaping (_ response: NoticeResponse)->Void) {
         
         alamofireManager.request(APIURLs.main, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { (response) in
@@ -63,6 +66,7 @@ struct MainRequests: MainParse {
         }
     }
     
+    //Função faz o download das imagens pela url
     func getImage(url: String, completion:@escaping (_ response: ImageResponse)->Void) {
         let imgView = UIImageView()
         

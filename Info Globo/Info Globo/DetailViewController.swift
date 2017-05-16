@@ -16,9 +16,11 @@ class DetailViewController: UIViewController {
     init(noticeModel: NoticeModel) {
         self.noticeModel = noticeModel
         super.init(nibName: nil, bundle: nil)
+        //Atribuo o nome da seção ao titulo da página, se vier vazio coloco o padrão O Globo
         self.title = noticeModel.section?.name ?? "O Globo"
         
         guard let view = Bundle.main.loadNibNamed("DetailView", owner: self, options: nil)?.last as? DetailView else { return }
+        //Função de configuração da View
         view.configure(title: noticeModel.title,
                        subTitle: noticeModel.subTitle,
                        autor: noticeModel.autors.count > 0 ? noticeModel.autors[0] : "",
@@ -35,6 +37,7 @@ class DetailViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
+        //Atualiza o tamanho da view a cada mudança de layout
         guard let view = self.view as? DetailView else { return }
         view.updateHeightContent()
     }
