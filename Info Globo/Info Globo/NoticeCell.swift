@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class NoticeCell<T>: UITableViewCell {
+class NoticeCell: UITableViewCell {
     
-    func configure(with model: T) {}
+    func configure(with model: CoverCellModel) {}
 }

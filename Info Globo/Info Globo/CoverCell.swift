@@ -9,13 +9,18 @@
 import Foundation
 import UIKit
 
-class CoverCell: NoticeCell<CoverCellModel> {
+class CoverCell: NoticeCell {
     
-    @IBOutlet weak var photoView: UIImageView!
+    @IBOutlet weak var photoView: NoticeImageView!
     @IBOutlet weak var sectionLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     
     override func configure(with model: CoverCellModel) {
+        
+        sectionLabel.text = model.section
+        titleLabel.text = model.title
+        photoView.createImage(url: model.photoNotice)
+
         
     }
     

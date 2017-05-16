@@ -24,7 +24,7 @@ struct NoticeModel {
     var imagens: [ImageModel]
     
     init(info: [String: Any]) throws {
-        
+
         guard let autors = info.autorsKey,
             let advertisingReport = info.advertisingReportKey,
             let subTitle = info.subTitleKey,

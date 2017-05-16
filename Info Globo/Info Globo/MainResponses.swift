@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum NoticeResponse {
     case success(model: [ContentModel]?)
@@ -14,5 +15,11 @@ enum NoticeResponse {
     case timeOut(description: ServerError)
     case noConnection(description: ServerError)
     case cancelled
+    case invalidResponse
+}
+
+enum ImageResponse {
+    case success(model: UIImage)
+    case downloadCanceled(description: ServerError)
     case invalidResponse
 }

@@ -11,6 +11,6 @@ import Foundation
 public struct CoverCellModel {
     
     var photoNotice: String
-    var section: String
+    var section: String?
     var title: String
 }

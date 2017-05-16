@@ -19,6 +19,8 @@ struct MainRequests: MainParse {
         configuration.timeoutIntervalForRequest = 10
         configuration.timeoutIntervalForResource = 10
         alamofireManager = Alamofire.SessionManager(configuration: configuration)
+        
+        Alamofire.DataRequest.addAcceptableImageContentTypes(["image/jpg", "image/png", "image/jpeg"])
     }
     
     func getNotices(completion:@escaping (_ response: NoticeResponse)->Void) {
@@ -61,8 +63,25 @@ struct MainRequests: MainParse {
         }
     }
     
-    func getImage() {
+    func getImage(url: String, completion:@escaping (_ response: ImageResponse)->Void) {
+        let imgView = UIImageView()
         
+        guard let url = URL(string: url) else { return }
+        imgView.af_setImage(withURL: url, placeholderImage: nil, filter: nil, progress: nil, progressQueue: DispatchQueue.main, imageTransition: UIImageView.ImageTransition.noTransition, runImageTransitionIfCached: true) { (response) in
+            
+            switch response.result {
+            case .success(let value):
+                completion(.success(model: value))
+            case .failure(let error):
+                switch error._code {
+                case -999, 0:
+                    let erro = ServerError(msgError: response.result.error.debugDescription, statusCode: error._code)
+                    completion(.downloadCanceled(description: erro))
+                default:
+                    completion(.invalidResponse)
+                }
+            }
+        }
     }
     
 }

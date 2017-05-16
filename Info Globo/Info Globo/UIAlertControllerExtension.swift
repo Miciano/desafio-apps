@@ -11,8 +11,7 @@ import UIKit
 
 extension UIAlertController {
     
-    static func alert(title:String, message:String, presenter: UIViewController?, handler: ((UIAlertAction) -> Void)?)
-    {
+    static func alert(title:String, message:String, presenter: UIViewController?, handler: ((UIAlertAction) -> Void)?) {
         guard let presenter = presenter else { return }
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)

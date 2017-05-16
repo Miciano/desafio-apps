@@ -10,12 +10,10 @@ import Foundation
 import UIKit
 
 extension UITableView {
-    func loadNoticeCell<T>(with identifier: String, at indexPath: IndexPath, model: T)-> UITableViewCell?  {
-        
+    func loadNoticeCell(with identifier: String, at indexPath: IndexPath, model: CoverCellModel)-> UITableViewCell?  {
         let cell = self.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         
-        guard let noticeCell = cell as? NoticeCell<T> else { return nil }
-        
+        guard let noticeCell = cell as? NoticeCell else { return nil }
         noticeCell.configure(with: model)
         
         return noticeCell
