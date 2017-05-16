@@ -41,8 +41,19 @@
 		98BDEBD71EC5586C0099EDBC /* NoticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDEBD61EC5586C0099EDBC /* NoticeModel.swift */; };
 		98BDEBD91EC559DB0099EDBC /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDEBD81EC559DB0099EDBC /* SectionModel.swift */; };
 		98BDEBDB1EC55A2A0099EDBC /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDEBDA1EC55A2A0099EDBC /* ImageModel.swift */; };
+		98EDF5EA1ECB700900C1291F /* Info_GloboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDF5E91ECB700900C1291F /* Info_GloboTests.swift */; };
 		CBB002BC797C8422D34BF1C1 /* Pods_Info_Globo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E810FB1248F0AEF8CC766C /* Pods_Info_Globo.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98EDF5EC1ECB700900C1291F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98BDEBB31EC555360099EDBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98BDEBBA1EC555360099EDBC;
+			remoteInfo = "Info Globo";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		48982AE583A3643CCAEC7043 /* Pods-Info Globo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Globo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Info Globo/Pods-Info Globo.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +94,9 @@
 		98BDEBD61EC5586C0099EDBC /* NoticeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeModel.swift; sourceTree = "<group>"; };
 		98BDEBD81EC559DB0099EDBC /* SectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 		98BDEBDA1EC55A2A0099EDBC /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		98EDF5E71ECB700900C1291F /* Info GloboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Info GloboTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98EDF5E91ECB700900C1291F /* Info_GloboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info_GloboTests.swift; sourceTree = "<group>"; };
+		98EDF5EB1ECB700900C1291F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8748ED23CB528B9FD1F232D /* Pods-Info Globo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Globo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Info Globo/Pods-Info Globo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +106,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBB002BC797C8422D34BF1C1 /* Pods_Info_Globo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98EDF5E41ECB700900C1291F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				98BDEBBD1EC555360099EDBC /* Info Globo */,
+				98EDF5E81ECB700900C1291F /* Info GloboTests */,
 				98BDEBBC1EC555360099EDBC /* Products */,
 				DE748E194FB3CC4B663D9495 /* Pods */,
 				6AD4F8C92BAD11467EB8A8A8 /* Frameworks */,
@@ -200,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				98BDEBBB1EC555360099EDBC /* Info Globo.app */,
+				98EDF5E71ECB700900C1291F /* Info GloboTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,6 +269,15 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		98EDF5E81ECB700900C1291F /* Info GloboTests */ = {
+			isa = PBXGroup;
+			children = (
+				98EDF5E91ECB700900C1291F /* Info_GloboTests.swift */,
+				98EDF5EB1ECB700900C1291F /* Info.plist */,
+			);
+			path = "Info GloboTests";
+			sourceTree = "<group>";
+		};
 		DE748E194FB3CC4B663D9495 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +310,24 @@
 			productReference = 98BDEBBB1EC555360099EDBC /* Info Globo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		98EDF5E61ECB700900C1291F /* Info GloboTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98EDF5F01ECB700900C1291F /* Build configuration list for PBXNativeTarget "Info GloboTests" */;
+			buildPhases = (
+				98EDF5E31ECB700900C1291F /* Sources */,
+				98EDF5E41ECB700900C1291F /* Frameworks */,
+				98EDF5E51ECB700900C1291F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98EDF5ED1ECB700900C1291F /* PBXTargetDependency */,
+			);
+			name = "Info GloboTests";
+			productName = "Info GloboTests";
+			productReference = 98EDF5E71ECB700900C1291F /* Info GloboTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -292,6 +342,12 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = MCDF44DBT7;
 						ProvisioningStyle = Automatic;
+					};
+					98EDF5E61ECB700900C1291F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = MCDF44DBT7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 98BDEBBA1EC555360099EDBC;
 					};
 				};
 			};
@@ -309,6 +365,7 @@
 			projectRoot = "";
 			targets = (
 				98BDEBBA1EC555360099EDBC /* Info Globo */,
+				98EDF5E61ECB700900C1291F /* Info GloboTests */,
 			);
 		};
 /* End PBXProject section */
@@ -325,6 +382,13 @@
 				985765F81ECAA35C00075C44 /* DetailView.xib in Resources */,
 				98BDEBC61EC555360099EDBC /* Assets.xcassets in Resources */,
 				984ED2F31EC9448200A6C443 /* MainCoverCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98EDF5E51ECB700900C1291F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +477,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98EDF5E31ECB700900C1291F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98EDF5EA1ECB700900C1291F /* Info_GloboTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98EDF5ED1ECB700900C1291F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98BDEBBA1EC555360099EDBC /* Info Globo */;
+			targetProxy = 98EDF5EC1ECB700900C1291F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		98BDEBC71EC555360099EDBC /* LaunchScreen.storyboard */ = {
@@ -552,6 +632,36 @@
 			};
 			name = Release;
 		};
+		98EDF5EE1ECB700900C1291F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MCDF44DBT7;
+				INFOPLIST_FILE = "Info GloboTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Miciano.Info-GloboTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Info Globo.app/Info Globo";
+			};
+			name = Debug;
+		};
+		98EDF5EF1ECB700900C1291F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MCDF44DBT7;
+				INFOPLIST_FILE = "Info GloboTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Miciano.Info-GloboTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Info Globo.app/Info Globo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,6 +682,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		98EDF5F01ECB700900C1291F /* Build configuration list for PBXNativeTarget "Info GloboTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98EDF5EE1ECB700900C1291F /* Debug */,
+				98EDF5EF1ECB700900C1291F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
